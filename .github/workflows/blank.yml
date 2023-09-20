@@ -30,7 +30,7 @@ jobs:
     #Run the Postman Collection
       - name: Run Tests
         if: ${{ always() }}
-        run: newman run "Herokuapp.postman_collection.json" -e "QA.postman_environment.json" -r cli,htmlextra -reporter-htmlextra-export testArtifacts/htmlreport.html	
+        run: newman run "Herokuapp.postman_collection.json" -e "QA.postman_environment.json" -r cli,htmlextra --reporter-htmlextra-export testArtifacts/htmlreport.html	
     #Upload the reports to TestArtifact directory
       - name: Output the results
         if: ${{ always() }}
