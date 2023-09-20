@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     # Checkout the repository
-      - uses: actions/checkout@v3
-      - name: Create dir
-        run: |
-          mkdir TestArtifact
+      #- uses: actions/checkout@v3
+      #- name: Create dir
+      #  run: |
+      #    mkdir TestArtifact
 		  
     #Install Node on the runner
       - name: Install Node
