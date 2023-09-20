@@ -12,6 +12,7 @@ jobs:
   test-api:
     runs-on: ubuntu-latest
     steps:
+    # Checkout the repository
       - uses: actions/checkout@v3
       - name: Create dir
         run: |
