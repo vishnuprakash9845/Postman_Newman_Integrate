@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Create dir
         run: |
-         mkdir TestArtifact
+          mkdir TestArtifact
 		  
     #Install Node on the runner
       - name: Install Node
