@@ -15,7 +15,8 @@ jobs:
     # Checkout the repository
       - uses: actions/checkout@v3
       - name: Create dir
-        run: mkdir TestArtifact
+        run: |
+            mkdir TestArtifact
 		  
     #Install Node on the runner
       - name: Install Node
